@@ -24,34 +24,47 @@ const Details = () => {
                         </div>
                     </div>
                 </div>
-                <div className=" md:col-span-1 bg-base-200 rounded-xl py-4 mt-12">
-                    <h2 className="text-center text-orange-500 text-3xl font-bold">Ticket Booking</h2>
-
-
-                        
-
-                            <div className="card shadow-sm">
-                                <form className="card-body">
-                                    <div className="form-control">
-                                        <label className="label">
-                                            <span className="label-text">Email</span>
-                                        </label>
-                                        <input type="email" placeholder="email" className="input input-bordered" required />
-                                    </div>
-                                    <div className="form-control">
-                                        <label className="label">
-                                            <span className="label-text">Password</span>
-                                        </label>
-                                        <input type="password" placeholder="password" className="input input-bordered" required />
-                                        
-                                    </div>
-                                    <div className="form-control mt-6">
-                                        <button className="btn btn-primary">Login</button>
-                                    </div>
-                                </form>
+                <div className=" md:col-span-1 bg-base-100 rounded-xl  ">
+                    <h2 className="text-center text-orange-500 text-3xl font-bold mb-4">Ticket Booking</h2>
+                    <div className="card bg-base-200">
+                        <form className="card-body">
+                        <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Name</span>
+                                </label>
+                                <input type="text" placeholder="Your Name" className="input input-bordered" required />
                             </div>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Your location</span>
+                                </label>
+                                <input type="text" placeholder="Your current location" className="input input-bordered" required />
+                            </div>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Mobile Number</span>
+                                </label>
+                                <input type="text" placeholder="Number" className="input input-bordered" required />
+                            </div>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Ticket quantity</span>
+                                </label>
+                                <input type="number" placeholder="Ticket quantity " className="input input-bordered" required />
 
+                            </div>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Date</span>
+                                </label>
+                                <input type="date" placeholder="Date " className="input input-bordered" required />
 
+                            </div>
+                            <div className="form-control mt-6">
+                                <button className="btn bg-orange-500 text-white hover:bg-orange-300">Booking</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
 
