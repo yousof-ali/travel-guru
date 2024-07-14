@@ -1,0 +1,106 @@
+[
+    {
+      "id": 1,
+      "category": "sea",
+      "place_name": "Cox's Bazar",
+      "photourl": "https://i.ibb.co/r2VjFKc/longest-sea-beach-in.jpg",
+      "headline": "Tranquil Beach Getaway",
+      "description": "Escape to a serene beachfront retreat and unwind with the sound of waves. Discover untouched beaches, snorkel, play beach volleyball, and indulge in seaside cuisine.",
+      "ticket": "$100 per person",
+      "location":"Cox'Bazar, Chattogram"
+    },
+    {
+      "id": 2,
+      "category": "Sundarban",
+      "place_name": "Enchanted Woodlands",
+      "photourl": "https://i.ibb.co/sPM33S2/sundarban.jpg",
+      "headline": "Enchanted Forest Adventure",
+      "description": "Immerse yourself in lush greenery. Explore trails to hidden waterfalls, encounter wildlife, camp under stars, and wake to birdsong.",
+      "ticket": "$80 per person",
+      "location":"Sundarban, Khulna"
+    },
+    {
+      "id": 3,
+      "category": "house",
+      "place_name": "Lalbugkella",
+      "photourl": "https://i.ibb.co/RYfQG35/lalbug-kella.jpg",
+      "headline": "Cozy Countryside Cottage",
+      "description": "Experience rustic charm in a countryside cottage. Enjoy rolling hills, local cuisine, and evenings by a crackling fireplace.",
+      "ticket": "$120 per night",
+      "location":"Dhaka"
+    },
+    {
+      "id": 4,
+      "category": "sea",
+      "place_name": "Saint Martin",
+      "photourl": "https://i.ibb.co/L6byKGq/saintmartin.jpg",
+      "headline": "Island Paradise Retreat",
+      "description": "Relax on white sandy beaches, snorkel among vibrant reefs, unwind in luxurious accommodations, and savor tropical cuisine.",
+      "ticket": "$150 per person",
+      "location":"Chattogram"
+    },
+    {
+      "id": 5,
+      "category": "forest",
+      "place_name": "Rangamati",
+      "photourl": "https://i.ibb.co/2YnqprK/11-IMGP4307-Pont-suspendu.jpg",
+      "headline": "Mystical Rainforest Expedition",
+      "description": "Embark on a journey through ancient trees, discover hidden trails, rare flora and fauna, and immerse in nature's tranquility.",
+      "ticket": "$120 per person",
+      "location":"Rangamati, Chattogram"
+    },
+    {
+      "id": 6,
+      "category": "house",
+      "place_name": "Ahsanmonzil",
+      "photourl": "https://i.ibb.co/prj1C5k/Ahsan-monzi-00l.jpg",
+      "headline": "Luxury Villa Retreat",
+      "description": "Indulge in luxury with stunning views. Enjoy gourmet dining, personalized service, and relax in a private pool surrounded by gardens.",
+      "ticket": "$300 per night",
+      "location":"Dhaka"
+    },
+    {
+      "id": 7,
+      "category": "sea",
+      "place_name": "Jaflong",
+      "photourl": "https://i.ibb.co/tL68Vmq/j-Custom.jpg",
+      "headline": "Adventure Yacht Experience",
+      "description": "Sail into remote islands, swim in secluded coves, enjoy water sports, gourmet meals, and ultimate relaxation on deck.",
+      "ticket": "$500 per person",
+      "location":"Sylhet"
+    },
+    {
+      "id": 8,
+      "category": "Guliakhali",
+      "place_name": "Wilderness Campsite",
+      "photourl": "https://i.ibb.co/MMDYDYX/guniya-khali.jpg",
+      "headline": "Wilderness Camping Expedition",
+      "description": "Camp under stars, connect with nature, hike through forests, encounter wildlife, and share stories around a campfire.",
+      "ticket": "$50 per night",
+      "location":"Chattogram"
+
+    },
+    {
+      "id": 9,
+      "category": "forest",
+      "place_name": "Bandarban",
+      "photourl": "https://i.ibb.co/WPXx5c9/Nilgiri-Hill-Resort-Bandarban-Bangladesh.jpg",
+      "headline": "Mountain Trekking Expedition",
+      "description": "Conquer peaks, witness breathtaking vistas, hike through rugged terrain, and connect with the raw beauty of mountains.",
+      "ticket": "$150 per person",
+      "location":"Bandarban, Chattogram"
+    },
+    
+    {
+      "id": 10,
+      "category": "sea",
+      "place_name": "Alpine Wilderness",
+      "photourl": "https://i.ibb.co/mvRyJMs/imgonline-com-ua-resize-Kr-H12b-QEFjvva-E.jpg",
+      "headline": "Alpine Adventure",
+      "description": "Embark on an alpine adventure with majestic peaks, pristine wilderness, hiking trails, alpine flora and fauna, and cozy lodges.",
+      "ticket": "$250 per person",
+      "location":"Dhaka"
+
+    }
+  ]
+  
