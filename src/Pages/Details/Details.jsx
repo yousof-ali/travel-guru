@@ -24,7 +24,7 @@ const Details = () => {
                         </div>
                     </div>
                 </div>
-                <div className=" md:col-span-1 bg-base-200 rounded-xl py-4">
+                <div className=" md:col-span-1 bg-base-200 rounded-xl py-4 mt-12">
                     <h2 className="text-center text-orange-500 text-3xl font-bold">Ticket Booking</h2>
 
 
