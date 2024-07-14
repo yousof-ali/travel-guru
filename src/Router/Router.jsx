@@ -5,6 +5,7 @@ import Login from "../Pages/login/Login";
 import Register from "../Pages/Register/Register";
 import Destination from "../Pages/Destination/Destination";
 import Details from "../Pages/Details/Details";
+import Bookmarks from "../Pages/Bookmarks/Bookmarks";
 
 
 const router = createBrowserRouter([
@@ -34,7 +35,13 @@ const router = createBrowserRouter([
                 element:<Details></Details>,
                 loader:()=>fetch('/data.json')
 
+            },
+            {
+                path:'/bookmarks',
+                element:<Bookmarks></Bookmarks>,
+                loader:()=>fetch('/data.json')
             }
+            
         ]
     }
 ])

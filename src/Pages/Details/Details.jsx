@@ -1,11 +1,22 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
+import { saveitems } from "../../Localstorage/localstorage";
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 
 const Details = () => {
     const { id } = useParams()
     const alldata = useLoaderData()
     const selectedData = alldata.filter(single => single.id == id);
+
+
+    const handLocalStorage = ()=>{
+        saveitems(id);
+        toast("Bookmark added")
+    }
+
+
     return (
         <div className="py-24 px-2 md:px-0">
             <div className=" lg:p-4 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -22,7 +33,10 @@ const Details = () => {
                             <h2 className="text-2xl font-semibold">{selectedData[0].headline}</h2>
                             <p className="my-2 font-light">{selectedData[0].description}</p>
                         </div>
+                        <button onClick={handLocalStorage} className="btn bg-orange-500 text-white hover:bg-orange-300">Add to Bookmark</button> 
+                        <ToastContainer />  
                     </div>
+                    
                 </div>
                 <div className=" md:col-span-1 bg-base-100 rounded-xl  ">
                     <h2 className="text-center text-orange-500 text-3xl font-bold mb-4">Ticket Booking</h2>

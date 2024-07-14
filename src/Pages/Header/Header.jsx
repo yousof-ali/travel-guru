@@ -8,7 +8,10 @@ const Header = () => {
     <li><NavLink to={"/destination"}>Destination</NavLink></li>
     <li><NavLink to={"/register"}>Register</NavLink></li>
     <li><NavLink to={"/login"}>Login</NavLink></li>
+    <li><NavLink to={"/bookmarks"}>Bookmarks</NavLink></li>
+    
     <li><NavLink to={"/about"}>About</NavLink></li>
+
     </>
     return (
         <div className="navbar bg-opacity-20 fixed bg-violet-500 z-10 container mx-auto">
