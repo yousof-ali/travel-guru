@@ -7,9 +7,9 @@ const Details = () => {
     const alldata = useLoaderData()
     const selectedData = alldata.filter(single => single.id == id);
     return (
-        <div className="py-20">
+        <div className="py-24 px-2 md:px-0">
             <div className=" lg:p-4 grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="border md:col-span-2">
+                <div className=" md:col-span-2">
                     <h2 className="text-3xl font-bold mb-4">Details of <span className="text-orange-400">{selectedData[0].place_name}</span></h2>
                     <div className="space-y-4">
                         <div className="flex items-center justify-center">
@@ -24,13 +24,13 @@ const Details = () => {
                         </div>
                     </div>
                 </div>
-                <div className="border md:col-span-1 bg-base-200 rounded-xl py-4">
+                <div className=" md:col-span-1 bg-base-200 rounded-xl py-4">
                     <h2 className="text-center text-orange-500 text-3xl font-bold">Ticket Booking</h2>
-                    <div className="hero  ">
 
-                        <div className="hero-content ">
 
-                            <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        
+
+                            <div className="card shadow-sm">
                                 <form className="card-body">
                                     <div className="form-control">
                                         <label className="label">
@@ -43,17 +43,14 @@ const Details = () => {
                                             <span className="label-text">Password</span>
                                         </label>
                                         <input type="password" placeholder="password" className="input input-bordered" required />
-                                        <label className="label">
-                                            <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                                        </label>
+                                        
                                     </div>
                                     <div className="form-control mt-6">
                                         <button className="btn btn-primary">Login</button>
                                     </div>
                                 </form>
                             </div>
-                        </div>
-                    </div>
+
 
                 </div>
             </div>

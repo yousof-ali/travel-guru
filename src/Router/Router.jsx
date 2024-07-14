@@ -27,12 +27,12 @@ const router = createBrowserRouter([
             {
                 path:'/destination',
                 element:<Destination></Destination>,
-                loader:()=>fetch('/public/data.json')
+                loader:()=>fetch('/data.json')
             },
             {
                 path:'/details/:id',
                 element:<Details></Details>,
-                loader:()=>fetch('/public/data.json')
+                loader:()=>fetch('/data.json')
 
             }
         ]
