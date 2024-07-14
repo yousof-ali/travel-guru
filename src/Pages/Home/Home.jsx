@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Header from "../Header/Header";
+// import Header from "../Header/Header";
 
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
             style={{
                 backgroundImage: "url(https://i.ibb.co/mvRyJMs/imgonline-com-ua-resize-Kr-H12b-QEFjvva-E.jpg)",
             }}>
-            <Header></Header>
+            {/* <Header></Header> */}
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-neutral-content text-center">
                 <div className=" flex flex-col items-center md:flex-row justify-between gap-16 md:gap-8">

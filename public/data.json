@@ -5,7 +5,7 @@
       "place_name": "Cox's Bazar",
       "photourl": "https://i.ibb.co/r2VjFKc/longest-sea-beach-in.jpg",
       "headline": "Tranquil Beach Getaway",
-      "description": "Escape to a serene beachfront retreat and unwind with the sound of waves. Discover untouched beaches, snorkel, play beach volleyball, and indulge in seaside cuisine.",
+      "description":"Cox's Bazar, located in southeastern Bangladesh, is renowned worldwide for its unparalleled natural beauty and its expansive sandy beach, which stretches over 120 kilometers along the Bay of Bengal. It holds the distinction of being the longest natural sea beach in the world, attracting tourists and travelers alike with its breathtaking sunsets, gentle waves, and serene ambiance. Apart from its scenic allure, Cox's Bazar offers visitors a rich cultural experience, blending the traditional Bengali heritage with influences from the indigenous communities of the Chittagong Hill Tracts. The town itself is vibrant, with bustling markets where local handicrafts and seafood delicacies entice the senses. Tourists flock to Cox's Bazar not only for its beach but also to explore nearby attractions such as Himchari National Park, where lush greenery and cascading waterfalls await adventurers.",
       "ticket": "$100 per person",
       "location":"Cox'Bazar, Chattogram"
     },
@@ -15,17 +15,17 @@
       "place_name": "Enchanted Woodlands",
       "photourl": "https://i.ibb.co/sPM33S2/sundarban.jpg",
       "headline": "Enchanted Forest Adventure",
-      "description": "Immerse yourself in lush greenery. Explore trails to hidden waterfalls, encounter wildlife, camp under stars, and wake to birdsong.",
+      "description": "The Sundarbans, located in the delta region of Bangladesh and India, is the largest mangrove forest in the world, famous for its unique ecosystem and biodiversity. This UNESCO World Heritage Site is home to the iconic Bengal tiger, as well as various other wildlife such as spotted deer, crocodiles, and numerous bird species. The dense mangrove trees and intricate network of tidal waterways create a mesmerizing landscape that is both beautiful and forbidding. The Sundarbans also play a crucial role in protecting the coastal regions from cyclones and tidal surges, acting as a natural barrier. Visitors to the Sundarbans can explore its wilderness on boat safaris, witnessing the rich flora and fauna amidst the tranquil surroundings. It is a place where nature thrives in its raw form, offering a profound experience of untouched wilderness and ecological marvels. The culture of the local communities, deeply intertwined with the mangrove forests, adds a cultural richness to the natural beauty, making the Sundarbans a truly unique and enchanting destination.",
       "ticket": "$80 per person",
       "location":"Sundarban, Khulna"
     },
     {
       "id": 3,
       "category": "house",
-      "place_name": "Lalbugkella",
+      "place_name": "Lalbaghkella",
       "photourl": "https://i.ibb.co/RYfQG35/lalbug-kella.jpg",
       "headline": "Cozy Countryside Cottage",
-      "description": "Experience rustic charm in a countryside cottage. Enjoy rolling hills, local cuisine, and evenings by a crackling fireplace.",
+      "description":"Lalbagh Fort, situated in the heart of Dhaka city, Bangladesh, is a historical treasure that reflects the Mughal architectural splendor of the 17th century. Commissioned by Prince Muhammad Azam, son of Emperor Aurangzeb, the fort remains unfinished but offers a glimpse into the grandeur of that era. Its strategic location along the Buriganga River once made it a pivotal military outpost. The fort complex includes several structures such as the Diwan-i-Aam (Hall of Audience), the mausoleum of Pari Bibi, a mosque, and a hammam (bathhouse), surrounded by lush gardens and pathways. The main fortification, with its imposing walls and bastions, stands as a testament to the craftsmanship of Mughal artisans. Lalbagh Fort not only serves as a historical site but also as a cultural hub, hosting various events and exhibitions that celebrate Bangladesh's rich heritage. Its serene atmosphere amidst the bustling cityscape offers visitors a retreat into the past, where the echoes of Mughal grandeur and the stories of Bengal's history come alive." ,
       "ticket": "$120 per night",
       "location":"Dhaka"
     },
@@ -35,7 +35,7 @@
       "place_name": "Saint Martin",
       "photourl": "https://i.ibb.co/L6byKGq/saintmartin.jpg",
       "headline": "Island Paradise Retreat",
-      "description": "Relax on white sandy beaches, snorkel among vibrant reefs, unwind in luxurious accommodations, and savor tropical cuisine.",
+      "description": "Saint Martin's Island, located in the northeastern part of the Bay of Bengal, is a pristine gem of Bangladesh, celebrated for its stunning natural beauty and serene atmosphere. As the only coral island in Bangladesh, Saint Martin's is renowned for its crystal-clear waters, white sandy beaches, and vibrant coral reefs that attract snorkelers and divers from around the world. The island is home to a small local community whose livelihoods primarily depend on fishing and tourism. Visitors to Saint Martin's can enjoy breathtaking sunsets, explore the island on foot or by rented bicycles, and savor freshly caught seafood at local eateries. Its laid-back vibe and untouched natural surroundings make it a perfect getaway for those seeking tranquility and relaxation. ",
       "ticket": "$150 per person",
       "location":"Chattogram"
     },
@@ -45,7 +45,7 @@
       "place_name": "Rangamati",
       "photourl": "https://i.ibb.co/2YnqprK/11-IMGP4307-Pont-suspendu.jpg",
       "headline": "Mystical Rainforest Expedition",
-      "description": "Embark on a journey through ancient trees, discover hidden trails, rare flora and fauna, and immerse in nature's tranquility.",
+      "description": "Rangamati, nestled amidst the lush green hills and serene lakes of the Chittagong Hill Tracts in southeastern Bangladesh, is a picturesque destination known for its natural beauty and cultural richness. The town is situated on the eastern banks of the Kaptai Lake, created as a result of the Kaptai Dam on the Karnaphuli River, and offers breathtaking views of the surrounding hills and waterways. Rangamati is home to diverse indigenous communities, including the Chakma, Marma, Tripura, and others, each contributing to the region's vibrant cultural tapestry. Visitors can explore traditional tribal villages, experience unique handicrafts and artwork, and savor local cuisine infused with flavors distinct to the hill tracts.",
       "ticket": "$120 per person",
       "location":"Rangamati, Chattogram"
     },
@@ -55,7 +55,7 @@
       "place_name": "Ahsanmonzil",
       "photourl": "https://i.ibb.co/prj1C5k/Ahsan-monzi-00l.jpg",
       "headline": "Luxury Villa Retreat",
-      "description": "Indulge in luxury with stunning views. Enjoy gourmet dining, personalized service, and relax in a private pool surrounded by gardens.",
+      "description": "Ahsan Manzil, located in the heart of Dhaka, Bangladesh, is an architectural marvel that stands as a testament to the opulence of the Nawabs of Bengal during the 19th century. Constructed in the Indo-Saracenic Revival architectural style, Ahsan Manzil served as the official residence of the Nawabs of Dhaka. The palace complex includes a main building, surrounded by beautifully landscaped gardens and overlooking the Buriganga River.Visitors to Ahsan Manzil can explore its intricately designed rooms, halls, and galleries adorned with period furniture, chandeliers, and exquisite decorations that reflect the grandeur of its heyday. The Pink Palace, as it is colloquially known due to its distinctive pink facade, has been meticulously restored and now houses a museum showcasing artifacts, photographs, and relics from the Nawabi era.",
       "ticket": "$300 per night",
       "location":"Dhaka"
     },
@@ -65,7 +65,7 @@
       "place_name": "Jaflong",
       "photourl": "https://i.ibb.co/tL68Vmq/j-Custom.jpg",
       "headline": "Adventure Yacht Experience",
-      "description": "Sail into remote islands, swim in secluded coves, enjoy water sports, gourmet meals, and ultimate relaxation on deck.",
+      "description": "Jaflong, nestled in the northeastern corner of Bangladesh, near the border with India, is renowned for its breathtaking natural beauty and unique geographical features. Located in the Sylhet region, Jaflong is famous for its picturesque landscapes dominated by rolling hills, tea gardens, and the tranquil Dawki River, which flows from India into Bangladesh.The highlight of Jaflong is its striking collection of tea gardens that carpet the hillsides, offering a serene backdrop against the clear, flowing waters of the Dawki River. Visitors often indulge in boat rides on the river, enjoying panoramic views of the surrounding greenery and hills. The riverbed is known for its collection of smooth, round stones, which locals gather for construction and other purposes, adding a distinctive charm to the area.",
       "ticket": "$500 per person",
       "location":"Sylhet"
     },
@@ -75,7 +75,7 @@
       "place_name": "Wilderness Campsite",
       "photourl": "https://i.ibb.co/MMDYDYX/guniya-khali.jpg",
       "headline": "Wilderness Camping Expedition",
-      "description": "Camp under stars, connect with nature, hike through forests, encounter wildlife, and share stories around a campfire.",
+      "description": "Guliakhali Beach, situated in the southeastern part of Bangladesh, near Cox's Bazar, is a hidden gem known for its pristine beauty and tranquil atmosphere. Unlike its more famous neighbor, Cox's Bazar, Guliakhali Beach remains relatively untouched by mass tourism, offering visitors a serene and peaceful retreat. The beach stretches along the Bay of Bengal, featuring soft sandy shores that are perfect for leisurely walks and relaxing amidst the sound of gentle waves. The waters are clear and inviting, ideal for swimming and enjoying water sports in a quieter setting compared to more crowded beaches.",
       "ticket": "$50 per night",
       "location":"Chattogram"
 
@@ -86,7 +86,7 @@
       "place_name": "Bandarban",
       "photourl": "https://i.ibb.co/WPXx5c9/Nilgiri-Hill-Resort-Bandarban-Bangladesh.jpg",
       "headline": "Mountain Trekking Expedition",
-      "description": "Conquer peaks, witness breathtaking vistas, hike through rugged terrain, and connect with the raw beauty of mountains.",
+      "description": "Bandarban, located in the southeastern part of Bangladesh, is a captivating district renowned for its breathtaking landscapes, rich cultural heritage, and vibrant indigenous communities. Nestled amidst the lush green hills of the Chittagong Hill Tracts, Bandarban offers visitors a unique blend of natural beauty and cultural diversity.The district is home to numerous indigenous tribes, including the Marma, Tripura, Chakma, and Mro, each with their own distinct traditions, languages, and vibrant festivals. Visitors to Bandarban have the opportunity to explore traditional tribal villages, interact with local communities, and witness intricate handicrafts such as bamboo and cane products, woven textiles, and traditional jewelry.",
       "ticket": "$150 per person",
       "location":"Bandarban, Chattogram"
     },
@@ -97,7 +97,7 @@
       "place_name": "Alpine Wilderness",
       "photourl": "https://i.ibb.co/mvRyJMs/imgonline-com-ua-resize-Kr-H12b-QEFjvva-E.jpg",
       "headline": "Alpine Adventure",
-      "description": "Embark on an alpine adventure with majestic peaks, pristine wilderness, hiking trails, alpine flora and fauna, and cozy lodges.",
+      "description": "Alpine Wilderness, located in the northeastern region of Bangladesh, near the Indian border, is a rugged and pristine area celebrated for its untouched natural beauty and serene environment. Situated amidst rolling hills and dense forests, Alpine Wilderness offers a picturesque retreat for nature enthusiasts and adventurers alike. The region is characterized by its towering peaks, lush green valleys, and meandering rivers that originate from the surrounding mountains. It is home to diverse flora and fauna, including rare species of plants and animals adapted to the alpine climate.",
       "ticket": "$250 per person",
       "location":"Dhaka"
 

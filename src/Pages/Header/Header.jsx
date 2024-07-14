@@ -11,10 +11,10 @@ const Header = () => {
     <li><NavLink to={"/about"}>About</NavLink></li>
     </>
     return (
-        <div className="navbar bg-base-100 fixed container  mx-auto bg-transparent top-0">
+        <div className="navbar bg-opacity-20 fixed bg-violet-500 z-10 container mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn  btn-ghost text-orange-300 lg:hidden">
+                    <div tabIndex={0} role="button" className="btn btn-ghost text-orange-300 lg:hidden">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"
