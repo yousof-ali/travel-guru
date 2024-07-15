@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 
@@ -17,7 +17,7 @@ const Header = () => {
         <div className="navbar bg-opacity-20 fixed z-10 container mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost text-orange-300 lg:hidden">
+                    <div tabIndex={0} role="button" className="btn btn-ghost text-orange-500 lg:hidden">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"
@@ -45,7 +45,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <Link to={"/login"} className="btn bg-orange-500 text-white hover:bg-orange-300">Login</Link>
             </div>
         </div>
     );

@@ -1,5 +1,9 @@
+import { useContext } from "react";
 import Header from "../Header/Header";
+import { Link } from "react-router-dom";
+import { authProvider } from "../../AuthProvider/AuthProvider";
 const Login = () => {
+    const {user,login} = useContext(authProvider)
   const handleLogin = (e) => {
     e.preventDefault();
     console.log("hi");
@@ -46,7 +50,7 @@ const Login = () => {
                   <button className="btn bg-orange-600 hover:bg-orange-300 text-white">Login</button>
                 </div>
               </form>
-              <p></p>
+              <p> No account? <Link to={"/register"} className="btn btn-link">register</Link> </p>
             </div>
           </div>
         </div>

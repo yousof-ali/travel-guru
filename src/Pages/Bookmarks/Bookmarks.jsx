@@ -33,9 +33,15 @@ const Bookmarks = () => {
     
     return (
         <div className="py-24 md:w-10/12 lg:w-6/12  mx-auto px-2 md:px-0">
-            {
+            { filtered.length>0?<>
+                {
+                    filtered.map((single,indx)=><SingleBookmark key={indx} single={single}></SingleBookmark>)
+                }
+            </>:<div className="text-center text-2xl text-orange-500"> 
+                No Bookmarks items!
+            </div>
                
-               filtered.map((single,indx)=><SingleBookmark key={indx} single={single}></SingleBookmark>)
+               
                 
             }
         </div>
