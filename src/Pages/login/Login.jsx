@@ -1,9 +1,41 @@
+import { useContext, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { authProvider } from "../../AuthProvider/AuthProvider";
 const Login = () => {
+  const {login,resetPassword}=useContext(authProvider)
+  const[sucess,setSucess]=useState("");
+  const[error,setError]=useState("");
+  const emailref = useRef();
+
   const handleLogin = (e) => {
     e.preventDefault();
-    console.log("hi");
+    setError("")
+    const userEmail = e.target.email.value ;
+    const userPassword = e.target.password.value;
+
+    login(userEmail,userPassword)
+    .then(()=>{
+      console.log("successfully login")
+    })
+    .catch((error)=>{
+      setError(error.message)
+    })
   };
+
+  const handleForGetPassword = ()=>{
+    setSucess("");
+    setError('');
+    const userEmail = emailref.current.value
+    if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(userEmail)){
+      setError("type a valid email!")
+      return;
+    }
+    resetPassword(userEmail)
+    .then(()=>{
+      setSucess("check your mail "+ userEmail)
+    })
+
+  }
   return (
     <div>
       <div className="hero bg-base-200 min-h-screen ">
@@ -21,6 +53,7 @@ const Login = () => {
                     placeholder="email"
                     className="input input-bordered"
                     name="email"
+                    ref={emailref}
                     required
                   />
                 </div>
@@ -36,11 +69,14 @@ const Login = () => {
                     required
                   />
                   <label className="label">
-                    <a href="#" className="label-text-alt link link-hover">
+                    <a onClick={handleForGetPassword} href="#" className="label-text-alt link link-hover">
                       Forgot password?
                     </a>
                   </label>
                 </div>
+                {
+                  error?<p className="text-sm text-red-600">{error}</p>:<p className="text-sm text-green-600">{sucess}</p>
+                }
                 <div className="form-control mt-6">
                   <button className="btn bg-orange-600 hover:bg-orange-300 text-white">Login</button>
                 </div>
