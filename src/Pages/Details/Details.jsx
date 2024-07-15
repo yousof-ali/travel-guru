@@ -42,7 +42,6 @@ const Details = () => {
                         <button onClick={handLocalStorage} className="btn bg-orange-500 text-white hover:bg-orange-300">Add to Bookmark</button>
                         <ToastContainer />
                     </div>
-
                 </div>
                 <div className=" md:col-span-1 bg-base-100 rounded-xl  ">
                     <h2 className="text-center text-orange-500 text-3xl font-bold mb-4">Ticket Booking</h2>
@@ -90,9 +89,7 @@ const Details = () => {
                                 <h2 className="text-2xl font-bold text-center text-orange-500 ">{selectedData[0].place_name} </h2>
                                 <h1 className="text-2xl font-bold text-center">Booking Done!</h1>
                                 </div>
-                                <a>for test</a>
                                 </>
-
                         }
                     </div>
                 </div>
