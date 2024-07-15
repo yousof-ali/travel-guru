@@ -90,6 +90,7 @@ const Details = () => {
                                 <h2 className="text-2xl font-bold text-center text-orange-500 ">{selectedData[0].place_name} </h2>
                                 <h1 className="text-2xl font-bold text-center">Booking Done!</h1>
                                 </div>
+                                <a>for test</a>
                                 </>
 
                         }
