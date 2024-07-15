@@ -1,12 +1,14 @@
-import { Link } from "react-router-dom";
-import Header from "../Header/Header";
+import { Link, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { authProvider } from "../../AuthProvider/AuthProvider";
+import { updateProfile } from "firebase/auth";
 
 
 const Register = () => {
-    const {user,createUser}=useContext(authProvider);
+    const {createUser}=useContext(authProvider);
     const [error,setError]=useState("");
+    const navi = useNavigate();
+
     const handleRegister = e =>{
         e.preventDefault();
         setError("");
@@ -14,15 +16,28 @@ const Register = () => {
         const userImgUrl = e.target.photo.value;
         const userEmail = e.target.email.value;
         const userPassword = e.target.password.value;
-        createUser(userEmail,userPassword)
-        .then(()=>{
+        console.log(userName,userEmail,userImgUrl,userPassword)
 
+        createUser(userEmail,userPassword)
+        .then((result)=>{
+          console.log(result.user)
+          updateProfile(result.user,{
+            displayName:userName,
+            photoURL:userImgUrl
+          })  
+          .then(()=>{
+            navi('/')
+          })
+          .catch((error)=>{
+            setError(error.message)
+          })         
         })
         .catch((error)=>{
           setError(error.message);
         })
         
     }
+
   return (
     <div>
       <div className="hero py-24  bg-base-200 min-h-screen ">

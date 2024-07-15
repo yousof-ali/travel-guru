@@ -1,16 +1,11 @@
-import { useContext } from "react";
-import Header from "../Header/Header";
 import { Link } from "react-router-dom";
-import { authProvider } from "../../AuthProvider/AuthProvider";
 const Login = () => {
-    const {user,login} = useContext(authProvider)
   const handleLogin = (e) => {
     e.preventDefault();
     console.log("hi");
   };
   return (
     <div>
-      <Header></Header>
       <div className="hero bg-base-200 min-h-screen ">
         <div className="hero-content">
             
