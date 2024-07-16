@@ -22,14 +22,15 @@ const Header = () => {
           </li>
         </>
       ) : (
-        <li>
-          <NavLink to={"/bookmarks"}>Bookmarks</NavLink>
-        </li>
+        <>
+          <li>
+            <NavLink to={"/bookmarks"}>Bookmarks</NavLink>
+          </li>
+          <li>
+            <NavLink to={"/profile"}>Profile</NavLink>
+          </li>
+        </>
       )}
-
-      <li>
-        <NavLink to={"/about"}>About</NavLink>
-      </li>
     </>
   );
 
@@ -83,24 +84,41 @@ const Header = () => {
       <div className="navbar-end">
         {user ? (
           <>
-          <div className="w-10 mr-2 lg:mr-4
-           outline outline-orange-500 rounded-full">
-            {
-                user.photoURL?<img title={user.displayName} alt="user" className="rounded-full" src={user.photoURL}/>
-                :<img title={user.displayName} alt="user" className="rounded-full" src='/src/assets/default-avatar-icon-of-social-media-user-vector.jpg'/>
-            }
-          </div>
-          <Link
-            onClick={handleLogOut}
-            className="btn bg-orange-500 text-white hover:bg-orange-300"
-          >
-            Logout
-          </Link>
+            <div
+              className="w-10 mr-2 lg:mr-4
+           outline outline-orange-500 rounded-full"
+            >
+              {user.photoURL ? (
+                <Link to={"/profile"}>
+                  <img
+                    title={user.displayName}
+                    alt="user"
+                    className="rounded-full"
+                    src={user.photoURL}
+                  />
+                </Link>
+              ) : (
+                <Link to={"/profile"}>
+                  <img
+                    title={user.displayName}
+                    alt="user"
+                    className="rounded-full"
+                    src="/src/assets/default-avatar-icon-of-social-media-user-vector.jpg"
+                  />
+                </Link>
+              )}
+            </div>
+            <Link
+              onClick={handleLogOut}
+              className="btn border-0 bg-orange-500 text-white hover:bg-orange-300"
+            >
+              Logout
+            </Link>
           </>
         ) : (
           <Link
             to={"/login"}
-            className="btn bg-orange-500 text-white hover:bg-orange-300"
+            className="btn border-0 bg-orange-500 text-white hover:bg-orange-300"
           >
             login
           </Link>

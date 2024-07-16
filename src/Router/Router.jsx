@@ -7,6 +7,8 @@ import Destination from "../Pages/Destination/Destination";
 import Details from "../Pages/Details/Details";
 import Bookmarks from "../Pages/Bookmarks/Bookmarks";
 import PrivateRouter from "../PrivateRouter/PrivateRouter";
+import Profile from "../Pages/Profile/Profile";
+import ResetPasswoed from "../Pages/ResetPassword/ResetPasswoed";
 
 
 const router = createBrowserRouter([
@@ -41,6 +43,14 @@ const router = createBrowserRouter([
                 path:'/bookmarks',
                 element:<PrivateRouter><Bookmarks></Bookmarks></PrivateRouter>,
                 loader:()=>fetch('/data.json')
+            },
+            {
+                path:'/profile',
+                element:<PrivateRouter><Profile></Profile></PrivateRouter>
+            },
+            {
+                path:"/resetpassword",
+                element:<PrivateRouter><ResetPasswoed></ResetPasswoed></PrivateRouter>
             }
             
         ]
