@@ -8,7 +8,7 @@ import { FaGithub } from "react-icons/fa";
 
 
 const Login = () => {
-  const { login, resetPassword,loginGoogle } = useContext(authProvider);
+  const { login, resetPassword,loginGoogle,loginGitHub } = useContext(authProvider);
   const [sucess, setSucess] = useState("");
   const [error, setError] = useState("");
   const emailref = useRef();
@@ -54,6 +54,17 @@ const Login = () => {
     loginGoogle()
     .then(()=>{
       console.log("google login done")
+      navigate(location?.state ? location.state : "/");
+    })
+    .catch((error)=>{
+      console.log(error.message);
+    })
+  }
+
+  const handleGitHubLogin = ()=>{
+    loginGitHub()
+    .then(()=>{
+      console.log("github login done")
       navigate(location?.state ? location.state : "/");
     })
     .catch((error)=>{
@@ -134,7 +145,7 @@ const Login = () => {
                 <div onClick={handleGoogleLogin}>
                 <FaGoogle />
                 </div>
-                <div>
+                <div onClick={handleGitHubLogin}>
                 <FaGithub />
                 </div>
               </div>
