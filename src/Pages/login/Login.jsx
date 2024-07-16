@@ -3,10 +3,12 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { authProvider } from "../../AuthProvider/AuthProvider";
 import { BiSolidHide } from "react-icons/bi";
 import { IoEye } from "react-icons/io5";
+import { FaGoogle } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 
 const Login = () => {
-  const { login, resetPassword } = useContext(authProvider);
+  const { login, resetPassword,loginGoogle } = useContext(authProvider);
   const [sucess, setSucess] = useState("");
   const [error, setError] = useState("");
   const emailref = useRef();
@@ -46,6 +48,17 @@ const Login = () => {
 
   const handleHide=()=>{
     setHide(!hide);
+  }
+
+  const handleGoogleLogin = ()=>{
+    loginGoogle()
+    .then(()=>{
+      console.log("google login done")
+      navigate(location?.state ? location.state : "/");
+    })
+    .catch((error)=>{
+      console.log(error.message);
+    })
   }
   return (
     <div>
@@ -116,6 +129,15 @@ const Login = () => {
                   register
                 </Link>{" "}
               </p>
+              <div className="divider">or</div>
+              <div className="flex items-center justify-center text-2xl gap-4">
+                <div onClick={handleGoogleLogin}>
+                <FaGoogle />
+                </div>
+                <div>
+                <FaGithub />
+                </div>
+              </div>
             </div>
           </div>
         </div>
