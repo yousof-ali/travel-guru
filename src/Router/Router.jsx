@@ -6,6 +6,7 @@ import Register from "../Pages/Register/Register";
 import Destination from "../Pages/Destination/Destination";
 import Details from "../Pages/Details/Details";
 import Bookmarks from "../Pages/Bookmarks/Bookmarks";
+import PrivateRouter from "../PrivateRouter/PrivateRouter";
 
 
 const router = createBrowserRouter([
@@ -32,13 +33,13 @@ const router = createBrowserRouter([
             },
             {
                 path:'/details/:id',
-                element:<Details></Details>,
+                element:<PrivateRouter><Details></Details></PrivateRouter>,
                 loader:()=>fetch('/data.json')
 
             },
             {
                 path:'/bookmarks',
-                element:<Bookmarks></Bookmarks>,
+                element:<PrivateRouter><Bookmarks></Bookmarks></PrivateRouter>,
                 loader:()=>fetch('/data.json')
             }
             
