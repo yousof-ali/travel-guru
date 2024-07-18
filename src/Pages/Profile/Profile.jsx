@@ -20,6 +20,7 @@ const Profile = () => {
         setError(error.message)
     })
   }
+  console.log(user)
   return (
     <div className="pt-24 ">
       <div className="max-w-[600px] mx-auto bg-base-200 py-4 rounded-xl">
