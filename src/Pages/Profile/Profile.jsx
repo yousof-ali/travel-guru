@@ -25,7 +25,7 @@ const Profile = () => {
     <div className="pt-24 ">
       <div className="max-w-[600px] mx-auto bg-base-200 py-4 rounded-xl">
         <div className="w-24 mx-auto rounded-full ">
-          <img className="rounded-full" src={user.photoURL} alt="" />
+          <img className="rounded-full" src={`${user.photoURL?user.photoURL:"/src/assets/default-avatar-icon-of-social-media-user-vector.jpg"}`} alt="" />
         </div>
         <h2 className="text-center text-2xl">{user.displayName}</h2>
         
