@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { authProvider } from "../../AuthProvider/AuthProvider";
+import "./Header.css"
 
 const Header = () => {
   const { user, logOut } = useContext(authProvider);
@@ -38,7 +39,7 @@ const Header = () => {
     logOut();
   };
   return (
-    <div className="navbar bg-opacity-20 fixed z-10 container mx-auto">
+    <div className="navbar bg-white bg-opacity-70  fixed z-10 container mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div
@@ -68,16 +69,16 @@ const Header = () => {
             {links}
           </ul>
         </div>
-        <a className="btn  w-28 bg-white  text-xl">
+        <a  className="  w-20  text-xl">
           <img
-            className="w-full text-white"
-            src="/src/assets/logo.png"
+            className="w-full"
+            src="/logo.png"
             alt=""
           />
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu font-bold text-orange-400 menu-horizontal px-1">
+        <ul className="menu font-bold  menu-horizontal px-1">
           {links}
         </ul>
       </div>

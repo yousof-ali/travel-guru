@@ -142,10 +142,10 @@ const Login = () => {
               </p>
               <div className="divider">or</div>
               <div className="flex items-center justify-center text-2xl gap-4">
-                <div onClick={handleGoogleLogin}>
+                <div className="cursor-pointer" onClick={handleGoogleLogin}>
                 <FaGoogle />
                 </div>
-                <div onClick={handleGitHubLogin}>
+                <div className="cursor-pointer" onClick={handleGitHubLogin}>
                 <FaGithub />
                 </div>
               </div>

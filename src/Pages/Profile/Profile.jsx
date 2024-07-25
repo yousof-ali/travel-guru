@@ -50,7 +50,6 @@ const Profile = () => {
             <Link to={"/resetpassword"} className="btn btn-primary">Reset Password</Link>
             </div>
           </div>
-        
       </div>
     </div>
   );
