@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 const Destination = () => {
     const [displayData, setDisplayData] = useState([])
     const [tempData, setTempData] = useState([])
+    const [activeTab,setActiveTab] = useState(1);
 
     useEffect(() => {
         fetch("/data.json")
@@ -21,19 +22,23 @@ const Destination = () => {
 
     const handleCategory = (category) => {
         if (category === "all") {
-            setDisplayData(tempData)
+            setDisplayData(tempData);
+            setActiveTab(1);
         }
         else if (category === "forest") {
             const newData = tempData.filter(single => single.category === "forest");
             setDisplayData(newData);
+            setActiveTab(2);
         }
         else if (category === "house") {
             const newData = tempData.filter(single => single.category === "house");
             setDisplayData(newData);
+            setActiveTab(3);
         }
         else if (category === "sea") {
             const newData = tempData.filter(single => single.category === "sea");
             setDisplayData(newData);
+            setActiveTab(4);
         }
     }
 
@@ -43,20 +48,17 @@ const Destination = () => {
             <p className="text-center mb-8 text-orange-400">Travel exposes you to new cultures, landscapes, cuisines, and ways of life.</p>
 
             <div className=" mb-6">
-                <ul id="category" className=" flex justify-center gap-6 ">
-                    <li>
-                    <NavLink onClick={() => handleCategory("all")} > All </NavLink>
-                    </li>
-                    <li>
-                        <NavLink onClick={() => handleCategory("forest")}> Forest </NavLink>
-                    </li>
-                    <li>
-                    <NavLink onClick={() => handleCategory("house")}> House </NavLink>
-                    </li>
-                    <li>
-                    <NavLink onClick={() => handleCategory("sea")}> Sea </NavLink>
-                    </li>
-                </ul>
+                <div role="tablist" className="tabs bg-base-100 flex gap-2 items-center justify-center tabs-boxed">
+                    
+                    <a className={`tab ${activeTab == 1 ? "act" :"dact"}`} onClick={() => handleCategory("all")} > All </a>
+                    
+                    <a className={`tab ${activeTab == 2 ? "act" :"dact"}`}  onClick={() => handleCategory("forest")}> Forest </a>
+                    
+                    <a className={`tab ${activeTab == 3 ? "act" :"dact"}`}  onClick={() => handleCategory("house")}> House </a>
+                    
+                    <a className={`tab ${activeTab == 4 ? "act" :"dact"}`}  onClick={() => handleCategory("sea")}> Sea </a>
+                    
+                </div>
             </div>
             <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 ">
 

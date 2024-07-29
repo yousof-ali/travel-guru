@@ -1,7 +1,11 @@
 
-#category li  {
+.act {
     background-color: rgb(249 115 22);
     border-radius: 7px;
     color: white;
-    padding: 4px;
+    
+    text-align: center;
+}
+.dact{
+    background-color: aliceblue;
 }
