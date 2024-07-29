@@ -44,11 +44,10 @@ const Register = () => {
   };
 
   return (
-    <div>
-      <div className="hero py-24   min-h-screen ">
-        <div className="hero-content">
-          <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-            <div className="card-body">
+    
+      
+          <div className="py-24 max-w-[300px] mx-auto min-h-screen">
+            <div className="rounded-xl shadow-2xl p-4">
               <form onSubmit={handleRegister}>
                 <div className="form-control">
                   <label className="label">
@@ -122,9 +121,7 @@ const Register = () => {
               </p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+    
   );
 };
 

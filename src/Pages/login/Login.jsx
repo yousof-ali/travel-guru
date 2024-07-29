@@ -72,11 +72,10 @@ const Login = () => {
     })
   }
   return (
-    <div>
-      <div className="hero min-h-screen ">
-        <div className="hero-content">
-          <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-            <div className="card-body">
+    
+      <div className="py-24 max-w-[300px] mx-auto min-h-screen ">
+        
+            <div className=" rounded-xl shadow-2xl p-4">
               <form onSubmit={handleLogin}>
                 <div className="form-control">
                   <label className="label">
@@ -150,10 +149,9 @@ const Login = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
       </div>
-    </div>
+       
+  
   );
 };
 

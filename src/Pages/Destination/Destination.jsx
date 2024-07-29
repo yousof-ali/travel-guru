@@ -6,9 +6,10 @@ import { useEffect, useState } from "react";
 
 
 const Destination = () => {
-    const [displayData, setDisplayData] = useState([])
-    const [tempData, setTempData] = useState([])
+    const [displayData, setDisplayData] = useState([]);
+    const [tempData, setTempData] = useState([]);
     const [activeTab,setActiveTab] = useState(1);
+    const [loading,setLoading]=useState(true);
 
     useEffect(() => {
         fetch("/data.json")
@@ -16,6 +17,7 @@ const Destination = () => {
             .then((result) => {
                 setDisplayData(result)
                 setTempData(result)
+                setLoading(false)
             })
     }, [])
 
@@ -60,6 +62,9 @@ const Destination = () => {
                     
                 </div>
             </div>
+            {
+                loading&&<p className="text-center text-2xl pt-24"><span className="loading loading-spinner text-error"></span></p>
+            }
             <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 ">
 
                 {
